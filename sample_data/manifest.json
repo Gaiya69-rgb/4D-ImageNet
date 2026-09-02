@@ -1,0 +1,74 @@
+{
+  "schema_version": "4d-imagenet-packaged-samples-v1",
+  "description": "Compact real-data inputs for standalone baseline smoke tests. Experimental files are copied byte-for-byte from extracted records. Simulation files contain index 0 copied from the named deposited simulation arrays.",
+  "files": [
+    {
+      "file": "sample_data/experimental/Pd_experimental_pattern.pkl",
+      "domain": "experimental",
+      "material": "Pd",
+      "source": "exp/Pd/FOV379nm_256_256_CL98_3ms_2.1mrad_sp7_330kx_000_master/0167_x101_y119.pkl",
+      "selection": "byte-identical copy",
+      "sha256": "a409beaa5dbc7a040ca623ca987c8d93bf47d39b4bfa18389cbdf637ff02b4b0"
+    },
+    {
+      "file": "sample_data/simulation/CeO2_simulation_pattern.pkl",
+      "domain": "simulation",
+      "material": "CeO2",
+      "source": "sim/CeO2/CeO2_sim_FOVnone_size256_thick100A_conv2.1mrad_randomOrientation.pkl",
+      "source_index": 0,
+      "selection": "exact stored array and associated metadata",
+      "sha256": "34b68688a26c25f8cd9a4cf2083f41e26d3203fdd255e6381c56593d5c054743"
+    },
+    {
+      "file": "sample_data/mixed_train/exp/Pd/FOV134nm_256_256_CL160_3ms_2.1mrad_sp7_920kx_000_master/FOV134nm_256_256_CL160_3ms_2.1mrad_sp7_920kx_000_master.pkl",
+      "domain": "experimental",
+      "material": "Pd",
+      "source": "exp/Pd/FOV134nm_256_256_CL160_3ms_2.1mrad_sp7_920kx_000_master/0000_x073_y104.pkl",
+      "selection": "exact experimental array and metadata packaged as a one-pattern merged PKL using the project merge schema",
+      "sha256": "4b0f7df0922c387b750f1a0f0b4ea58c61d30cfa4447c352759b3f6c9c0af6d7"
+    },
+    {
+      "file": "sample_data/mixed_train/exp/Pd/FOV190nm_256_256_CL160_3ms_2.1mrad_sp7_650kx_000_master/FOV190nm_256_256_CL160_3ms_2.1mrad_sp7_650kx_000_master.pkl",
+      "domain": "experimental",
+      "material": "Pd",
+      "source": "exp/Pd/FOV190nm_256_256_CL160_3ms_2.1mrad_sp7_650kx_000_master/0000_x082_y088.pkl",
+      "selection": "exact experimental array and metadata packaged as a one-pattern merged PKL using the project merge schema",
+      "sha256": "c999115ca56465abfcab03b1281854393178c7e08d6cea627cf9712b8e564a5c"
+    },
+    {
+      "file": "sample_data/mixed_train/exp/Pd/FOV268nm_256_256_CL160_3ms_2.1mrad_sp7_460kx_000_master/FOV268nm_256_256_CL160_3ms_2.1mrad_sp7_460kx_000_master.pkl",
+      "domain": "experimental",
+      "material": "Pd",
+      "source": "exp/Pd/FOV268nm_256_256_CL160_3ms_2.1mrad_sp7_460kx_000_master/0000_x087_y164.pkl",
+      "selection": "exact experimental array and metadata packaged as a one-pattern merged PKL using the project merge schema",
+      "sha256": "ef9f95835346bf3362e64e2d4748cf0ba077d892fb2a00b37c24c8e246ed6606"
+    },
+    {
+      "file": "sample_data/mixed_train/sim/Ag_simulation_example.pkl",
+      "domain": "simulation",
+      "material": "Ag",
+      "source": "sim/Ag/Ag_sim_FOVnone_size256_thick100A_conv2.1mrad_randomOrientation.pkl",
+      "source_index": 0,
+      "selection": "exact stored array and associated metadata",
+      "sha256": "041d6be710de87e9326bfcf868a47ff47b421e64b130d6efb0aad54a04570390"
+    },
+    {
+      "file": "sample_data/mixed_train/sim/CeO2_simulation_example.pkl",
+      "domain": "simulation",
+      "material": "CeO2",
+      "source": "sim/CeO2/CeO2_sim_FOVnone_size256_thick100A_conv2.1mrad_randomOrientation.pkl",
+      "source_index": 0,
+      "selection": "exact stored array and associated metadata",
+      "sha256": "34b68688a26c25f8cd9a4cf2083f41e26d3203fdd255e6381c56593d5c054743"
+    },
+    {
+      "file": "sample_data/mixed_train/sim/SrTiO3_simulation_example.pkl",
+      "domain": "simulation",
+      "material": "SrTiO3",
+      "source": "sim/SrTiO3/SrTiO3_sim_FOVnone_size256_thick100A_conv2.1mrad_randomOrientation.pkl",
+      "source_index": 0,
+      "selection": "exact stored array and associated metadata",
+      "sha256": "ba5caac7e9dd092d275139899dddd08c9f46afac5d884f53851f0d3e423c84b4"
+    }
+  ]
+}
