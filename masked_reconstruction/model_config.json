@@ -1,0 +1,104 @@
+{
+  "schema_version": "4d-imagenet-baseline-config-v1",
+  "task": "mixed_domain_masked_reconstruction",
+  "release_name": "mixed_domain_epoch48",
+  "implementation": {
+    "model": "encoder/baseline/models.py",
+    "dataset": "encoder/baseline/dataset.py",
+    "masking": "encoder/baseline/masks.py",
+    "metrics": "encoder/baseline/metrics.py",
+    "training_and_evaluation": "encoder/baseline/mixed_masked_reconstruction.py"
+  },
+  "checkpoint": {
+    "file": "mixed_domain_epoch48.pth",
+    "source_file": "encoder/outputs/mixed_exp_sim_v1/model_best_mixed.pt",
+    "sha256": "54def410be0419d58ce7913eafe112bc0bf2ffc6ace8b80e76f120340cc10018",
+    "size_bytes": 499906,
+    "format": "PyTorch dictionary with model_state, args, best_val_loss, best_epoch, and training_domains",
+    "parameter_count": 118187,
+    "best_epoch": 48,
+    "best_validation_loss": 0.002822076512711042,
+    "training_domains": ["experimental", "simulation"]
+  },
+  "architecture": {
+    "class": "SmallUNet",
+    "input_channels": 2,
+    "output_channels": 1,
+    "base_channels": 16,
+    "encoder_channels": [16, 32],
+    "bottleneck_channels": 64,
+    "decoder_channels": [32, 16],
+    "conv_block": "two 3x3 Conv2d + BatchNorm2d + ReLU layers",
+    "downsampling": "2x2 max pooling",
+    "upsampling": "2x2 stride-2 transposed convolution",
+    "skip_connection": "channel-wise concatenation",
+    "output_head": "1x1 Conv2d followed by sigmoid"
+  },
+  "input": {
+    "model_shape": [192, 192],
+    "target_channels": 1,
+    "model_channels": 2,
+    "model_channel_semantics": ["masked pattern x*(1-M)", "binary mask M"],
+    "dtype": "float32",
+    "preprocessing": [
+      "replace NaN and positive or negative infinity with zero",
+      "clip negative intensities to zero",
+      "apply log1p",
+      "divide by the transformed per-pattern maximum plus 1e-8 when nonzero",
+      "bilinear resize with align_corners=false when needed"
+    ]
+  },
+  "masking": {
+    "type": "spot",
+    "spot_selection": "random",
+    "minimum_spots": 1,
+    "maximum_spots": 4,
+    "spot_radius_fraction": 0.035,
+    "direct_beam_exclusion_radius_fraction": 0.06,
+    "peak_window_pixels": 11,
+    "minimum_peak_fraction": 0.12,
+    "spot_rank": 1,
+    "stored_mask_ratio_parameter": 0.5,
+    "note": "mask_ratio is retained for shared mask interfaces; circular spot masks use the explicit spot parameters"
+  },
+  "training": {
+    "seed": 42,
+    "sample_limits": {
+      "experimental": 5000,
+      "simulation": 5000
+    },
+    "split_ratios": [0.7, 0.15, 0.15],
+    "split_unit": "experimental acquisition or simulation file",
+    "optimizer": "Adam",
+    "initial_learning_rate": 0.001,
+    "requested_epochs": 60,
+    "requested_batch_size": 8,
+    "resolved_batch_size": 8,
+    "gradient_accumulation_steps": 1,
+    "automatic_mixed_precision": true,
+    "maximum_gradient_norm": 1.0,
+    "scheduler": {
+      "name": "ReduceLROnPlateau",
+      "factor": 0.5,
+      "patience": 5,
+      "minimum_learning_rate": 0.00001
+    },
+    "early_stopping": {
+      "patience": 12,
+      "minimum_epochs": 25
+    },
+    "loss": {
+      "name": "intensity-weighted masked MSE",
+      "scope": "masked pixels only",
+      "pixel_weight": "1 + intensity_weight * target^intensity_gamma",
+      "intensity_weight": 8.0,
+      "intensity_gamma": 1.0
+    }
+  },
+  "evaluation": {
+    "split_manifest": "split_manifest.json",
+    "metrics": "test_metrics.json",
+    "compute_ssim": false,
+    "display_percentile": 99.5
+  }
+}

@@ -1,0 +1,348 @@
+{
+  "schema_version": "4d-imagenet-masked-split-v1",
+  "split_unit": "source acquisition or simulation file",
+  "leakage_control": "All patterns from one source file remain in one split.",
+  "seed": 42,
+  "requested_ratios": [0.7, 0.15, 0.15],
+  "source_record": "encoder/outputs/mixed_exp_sim_v1/split_groups.csv",
+  "summary": [
+    {
+      "split": "train",
+      "domain": "experimental",
+      "num_samples": 2929,
+      "num_groups": 17,
+      "materials": ["Ag", "Au", "Au+Ag", "CoO", "Pd", "ZnO"]
+    },
+    {
+      "split": "train",
+      "domain": "simulation",
+      "num_samples": 3461,
+      "num_groups": 9,
+      "materials": ["Cu", "CuO", "GaAs", "LiCoO2", "MoS2", "Pt", "Si", "Ti", "TiO2"]
+    },
+    {
+      "split": "validation",
+      "domain": "experimental",
+      "num_samples": 1036,
+      "num_groups": 6,
+      "materials": ["Ag", "Au", "Au+Ag", "CoO", "Pd", "ZnO"]
+    },
+    {
+      "split": "validation",
+      "domain": "simulation",
+      "num_samples": 770,
+      "num_groups": 2,
+      "materials": ["Ag", "Fe"]
+    },
+    {
+      "split": "experimental_test",
+      "domain": "experimental",
+      "num_samples": 1035,
+      "num_groups": 6,
+      "materials": ["Ag", "Au", "Au+Ag", "CoO", "Pd", "ZnO"]
+    },
+    {
+      "split": "simulation_test",
+      "domain": "simulation",
+      "num_samples": 769,
+      "num_groups": 2,
+      "materials": ["CeO2", "SrTiO3"]
+    }
+  ],
+  "groups": [
+    {
+      "split": "train",
+      "domain": "experimental",
+      "material": "Ag",
+      "source_file": "exp/Ag/Ag_FOV134nm_CL160mm_185_185_4ms_2.1mrad_920kx_000_master/Ag_FOV134nm_CL160mm_185_185_4ms_2.1mrad_920kx_000_master.pkl",
+      "num_samples": 173
+    },
+    {
+      "split": "train",
+      "domain": "experimental",
+      "material": "Ag",
+      "source_file": "exp/Ag/Ag_FOV190nm_CL160mm_260_260_1.5ms_2.1mrad_650kx_000_master/Ag_FOV190nm_CL160mm_260_260_1.5ms_2.1mrad_650kx_000_master.pkl",
+      "num_samples": 173
+    },
+    {
+      "split": "train",
+      "domain": "experimental",
+      "material": "Au",
+      "source_file": "exp/Au/Au_FOV190nm_CL160mm_260_260_3ms_2.1mrad_650kx_001_master/Au_FOV190nm_CL160mm_260_260_3ms_2.1mrad_650kx_001_master.pkl",
+      "num_samples": 173
+    },
+    {
+      "split": "train",
+      "domain": "experimental",
+      "material": "Au+Ag",
+      "source_file": "exp/Au+Ag/AuAgmix_FOV190nm_CL160mm_260_260_3ms_2.1mrad_650kx_001_master/AuAgmix_FOV190nm_CL160mm_260_260_3ms_2.1mrad_650kx_001_master.pkl",
+      "num_samples": 173
+    },
+    {
+      "split": "train",
+      "domain": "experimental",
+      "material": "CoO",
+      "source_file": "exp/CoO/CoO_FOV134nm_256_256_CL160mm_2000us_2.1mrad_sp7_920kx_000_master/CoO_FOV134nm_256_256_CL160mm_2000us_2.1mrad_sp7_920kx_000_master.pkl",
+      "num_samples": 173
+    },
+    {
+      "split": "train",
+      "domain": "experimental",
+      "material": "CoO",
+      "source_file": "exp/CoO/CoO_FOV190nm_256_256_CL160mm_2000us_2.1mrad_sp7_650kx_001_master/CoO_FOV190nm_256_256_CL160mm_2000us_2.1mrad_sp7_650kx_001_master.pkl",
+      "num_samples": 172
+    },
+    {
+      "split": "train",
+      "domain": "experimental",
+      "material": "CoO",
+      "source_file": "exp/CoO/CoO_FOV190nm_256_256_CL160mm_2000us_2.1mrad_sp7_650kx_002_master/CoO_FOV190nm_256_256_CL160mm_2000us_2.1mrad_sp7_650kx_002_master.pkl",
+      "num_samples": 172
+    },
+    {
+      "split": "train",
+      "domain": "experimental",
+      "material": "CoO",
+      "source_file": "exp/CoO/CoO_FOV268nm_256_256_CL160mm_3000us_2.1mrad_sp7_460Kx_000_master/CoO_FOV268nm_256_256_CL160mm_3000us_2.1mrad_sp7_460Kx_000_master.pkl",
+      "num_samples": 172
+    },
+    {
+      "split": "train",
+      "domain": "experimental",
+      "material": "CoO",
+      "source_file": "exp/CoO/CoO_FOV379nm_256_256_CL160mm_1500us_2.1mrad_sp7_330kx_000_master/CoO_FOV379nm_256_256_CL160mm_1500us_2.1mrad_sp7_330kx_000_master.pkl",
+      "num_samples": 172
+    },
+    {
+      "split": "train",
+      "domain": "experimental",
+      "material": "CoO",
+      "source_file": "exp/CoO/CoO_FOV379nm_256_256_CL160mm_2000us_2.1mrad_sp7_330kx_000_master/CoO_FOV379nm_256_256_CL160mm_2000us_2.1mrad_sp7_330kx_000_master.pkl",
+      "num_samples": 172
+    },
+    {
+      "split": "train",
+      "domain": "experimental",
+      "material": "CoO",
+      "source_file": "exp/CoO/CoO_FOV379nm_256_256_CL160mm_2000us_2.1mrad_sp7_330kx_001_master/CoO_FOV379nm_256_256_CL160mm_2000us_2.1mrad_sp7_330kx_001_master.pkl",
+      "num_samples": 172
+    },
+    {
+      "split": "train",
+      "domain": "experimental",
+      "material": "Pd",
+      "source_file": "exp/Pd/FOV268nm_256_256_CL160_3ms_2.1mrad_sp7_460kx_000_master/FOV268nm_256_256_CL160_3ms_2.1mrad_sp7_460kx_000_master.pkl",
+      "num_samples": 172
+    },
+    {
+      "split": "train",
+      "domain": "experimental",
+      "material": "Pd",
+      "source_file": "exp/Pd/FOV268nm_256_256_CL160_3ms_2.1mrad_sp7_460kx_001_master/FOV268nm_256_256_CL160_3ms_2.1mrad_sp7_460kx_001_master.pkl",
+      "num_samples": 172
+    },
+    {
+      "split": "train",
+      "domain": "experimental",
+      "material": "Pd",
+      "source_file": "exp/Pd/FOV379nm_256_256_CL98_3ms_2.1mrad_sp7_330kx_000_master/FOV379nm_256_256_CL98_3ms_2.1mrad_sp7_330kx_000_master.pkl",
+      "num_samples": 172
+    },
+    {
+      "split": "train",
+      "domain": "experimental",
+      "material": "ZnO",
+      "source_file": "exp/ZnO/ZnO_FOV134nm_CL160mm_200_200_3ms_2.1mrad_sp7_920kx_000_master/ZnO_FOV134nm_CL160mm_200_200_3ms_2.1mrad_sp7_920kx_000_master.pkl",
+      "num_samples": 172
+    },
+    {
+      "split": "train",
+      "domain": "experimental",
+      "material": "ZnO",
+      "source_file": "exp/ZnO/ZnO_FOV190nm_CL160mm_260_260_2ms_2.1mrad_650kx_000_master/ZnO_FOV190nm_CL160mm_260_260_2ms_2.1mrad_650kx_000_master.pkl",
+      "num_samples": 172
+    },
+    {
+      "split": "train",
+      "domain": "experimental",
+      "material": "ZnO",
+      "source_file": "exp/ZnO/ZnO_FOV190nm_CL160mm_260_260_2ms_2.1mrad_650kx_001_master/ZnO_FOV190nm_CL160mm_260_260_2ms_2.1mrad_650kx_001_master.pkl",
+      "num_samples": 172
+    },
+    {
+      "split": "train",
+      "domain": "simulation",
+      "material": "Cu",
+      "source_file": "sim/Cu/Cu_sim_FOVnone_size256_thick100A_conv2.1mrad_randomOrientation.pkl",
+      "num_samples": 385
+    },
+    {
+      "split": "train",
+      "domain": "simulation",
+      "material": "CuO",
+      "source_file": "sim/CuO/CuO_sim_FOVnone_size256_thick100A_conv2.1mrad_randomOrientation.pkl",
+      "num_samples": 385
+    },
+    {
+      "split": "train",
+      "domain": "simulation",
+      "material": "GaAs",
+      "source_file": "sim/GaAs/GaAs_sim_FOVnone_size256_thick100A_conv2.1mrad_randomOrientation.pkl",
+      "num_samples": 385
+    },
+    {
+      "split": "train",
+      "domain": "simulation",
+      "material": "LiCoO2",
+      "source_file": "sim/LiCoO2/LiCoO2_sim_FOVnone_size256_thick100A_conv2.1mrad_randomOrientation.pkl",
+      "num_samples": 385
+    },
+    {
+      "split": "train",
+      "domain": "simulation",
+      "material": "MoS2",
+      "source_file": "sim/MoS2/MoS2_sim_FOVnone_size256_thick100A_conv2.1mrad_randomOrientation.pkl",
+      "num_samples": 385
+    },
+    {
+      "split": "train",
+      "domain": "simulation",
+      "material": "Pt",
+      "source_file": "sim/Pt/Pt_sim_FOVnone_size256_thick100A_conv2.1mrad_randomOrientation.pkl",
+      "num_samples": 384
+    },
+    {
+      "split": "train",
+      "domain": "simulation",
+      "material": "Si",
+      "source_file": "sim/Si/Si_sim_FOVnone_size256_thick100A_conv2.1mrad_randomOrientation.pkl",
+      "num_samples": 384
+    },
+    {
+      "split": "train",
+      "domain": "simulation",
+      "material": "Ti",
+      "source_file": "sim/Ti/Ti_sim_FOVnone_size256_thick100A_conv2.1mrad_randomOrientation.pkl",
+      "num_samples": 384
+    },
+    {
+      "split": "train",
+      "domain": "simulation",
+      "material": "TiO2",
+      "source_file": "sim/TiO2/TiO2_sim_FOVnone_size256_thick100A_conv2.1mrad_randomOrientation.pkl",
+      "num_samples": 384
+    },
+    {
+      "split": "validation",
+      "domain": "experimental",
+      "material": "Ag",
+      "source_file": "exp/Ag/Ag_FOV190nm_CL160mm_260_260_1.5ms_2.1mrad_650kx_001_master/Ag_FOV190nm_CL160mm_260_260_1.5ms_2.1mrad_650kx_001_master.pkl",
+      "num_samples": 173
+    },
+    {
+      "split": "validation",
+      "domain": "experimental",
+      "material": "Au",
+      "source_file": "exp/Au/Au_FOV95nm_CL160mm_130_130_3ms_2.1mrad_1.3Mx_000_master/Au_FOV95nm_CL160mm_130_130_3ms_2.1mrad_1.3Mx_000_master.pkl",
+      "num_samples": 173
+    },
+    {
+      "split": "validation",
+      "domain": "experimental",
+      "material": "Au+Ag",
+      "source_file": "exp/Au+Ag/AuAgmix_FOV190nm_CL160mm_260_260_3ms_2.1mrad_650kx_002_master/AuAgmix_FOV190nm_CL160mm_260_260_3ms_2.1mrad_650kx_002_master.pkl",
+      "num_samples": 173
+    },
+    {
+      "split": "validation",
+      "domain": "experimental",
+      "material": "CoO",
+      "source_file": "exp/CoO/CoO_FOV190nm_256_256_CL160mm_2000us_2.1mrad_sp7_650kx_000_master/CoO_FOV190nm_256_256_CL160mm_2000us_2.1mrad_sp7_650kx_000_master.pkl",
+      "num_samples": 173
+    },
+    {
+      "split": "validation",
+      "domain": "experimental",
+      "material": "Pd",
+      "source_file": "exp/Pd/FOV134nm_256_256_CL160_3ms_2.1mrad_sp7_920kx_000_master/FOV134nm_256_256_CL160_3ms_2.1mrad_sp7_920kx_000_master.pkl",
+      "num_samples": 172
+    },
+    {
+      "split": "validation",
+      "domain": "experimental",
+      "material": "ZnO",
+      "source_file": "exp/ZnO/ZnO_FOV190nm_CL160mm_260_260_2ms_2.1mrad_650kx_002_master/ZnO_FOV190nm_CL160mm_260_260_2ms_2.1mrad_650kx_002_master.pkl",
+      "num_samples": 172
+    },
+    {
+      "split": "validation",
+      "domain": "simulation",
+      "material": "Ag",
+      "source_file": "sim/Ag/Ag_sim_FOVnone_size256_thick100A_conv2.1mrad_randomOrientation.pkl",
+      "num_samples": 385
+    },
+    {
+      "split": "validation",
+      "domain": "simulation",
+      "material": "Fe",
+      "source_file": "sim/Fe/Fe_sim_FOVnone_size256_thick100A_conv2.1mrad_randomOrientation.pkl",
+      "num_samples": 385
+    },
+    {
+      "split": "experimental_test",
+      "domain": "experimental",
+      "material": "Ag",
+      "source_file": "exp/Ag/Ag_FOV134nm_CL160mm_185_185_3ms_2.1mrad_920kx_000_master/Ag_FOV134nm_CL160mm_185_185_3ms_2.1mrad_920kx_000_master.pkl",
+      "num_samples": 173
+    },
+    {
+      "split": "experimental_test",
+      "domain": "experimental",
+      "material": "Au",
+      "source_file": "exp/Au/Au_FOV190nm_CL160mm_260_260_3ms_2.1mrad_650kx_000_master/Au_FOV190nm_CL160mm_260_260_3ms_2.1mrad_650kx_000_master.pkl",
+      "num_samples": 173
+    },
+    {
+      "split": "experimental_test",
+      "domain": "experimental",
+      "material": "Au+Ag",
+      "source_file": "exp/Au+Ag/AuAgmix_FOV190nm_CL160mm_260_260_3ms_2.1mrad_650kx_000_master/AuAgmix_FOV190nm_CL160mm_260_260_3ms_2.1mrad_650kx_000_master.pkl",
+      "num_samples": 173
+    },
+    {
+      "split": "experimental_test",
+      "domain": "experimental",
+      "material": "CoO",
+      "source_file": "exp/CoO/CoO_FOV95nm_128_128_CL160mm_3000us_2.1mrad_sp7_1.3Mx_000_master/CoO_FOV95nm_128_128_CL160mm_3000us_2.1mrad_sp7_1.3Mx_000_master.pkl",
+      "num_samples": 172
+    },
+    {
+      "split": "experimental_test",
+      "domain": "experimental",
+      "material": "Pd",
+      "source_file": "exp/Pd/FOV190nm_256_256_CL160_3ms_2.1mrad_sp7_650kx_000_master/FOV190nm_256_256_CL160_3ms_2.1mrad_sp7_650kx_000_master.pkl",
+      "num_samples": 172
+    },
+    {
+      "split": "experimental_test",
+      "domain": "experimental",
+      "material": "ZnO",
+      "source_file": "exp/ZnO/ZnO_FOV190nm_CL160mm_260_260_3ms_2.1mrad_sp7_650kx_000_master/ZnO_FOV190nm_CL160mm_260_260_3ms_2.1mrad_sp7_650kx_000_master.pkl",
+      "num_samples": 172
+    },
+    {
+      "split": "simulation_test",
+      "domain": "simulation",
+      "material": "CeO2",
+      "source_file": "sim/CeO2/CeO2_sim_FOVnone_size256_thick100A_conv2.1mrad_randomOrientation.pkl",
+      "num_samples": 385
+    },
+    {
+      "split": "simulation_test",
+      "domain": "simulation",
+      "material": "SrTiO3",
+      "source_file": "sim/SrTiO3/SrTiO3_sim_FOVnone_size256_thick100A_conv2.1mrad_randomOrientation.pkl",
+      "num_samples": 384
+    }
+  ]
+}

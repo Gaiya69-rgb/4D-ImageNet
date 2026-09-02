@@ -1,0 +1,40 @@
+{
+  "schema_version": "4d-imagenet-masked-metrics-v1",
+  "checkpoint": "mixed_domain_epoch48.pth",
+  "best_epoch": 48,
+  "best_validation_loss": 0.002822076512711042,
+  "metric_scope": "masked pixels only unless otherwise stated",
+  "metric_definitions": {
+    "masked_mse": "mean squared error over masked pixels",
+    "masked_mae": "mean absolute error over masked pixels",
+    "weighted_masked_mse": "masked MSE weighted by 1 + 8 * target",
+    "psnr_db": "PSNR computed from masked MSE with normalized maximum intensity 1",
+    "ssim": "not computed in this run"
+  },
+  "test_sets": {
+    "experimental": {
+      "num_samples": 1035,
+      "num_groups": 6,
+      "materials": ["Ag", "Au", "Au+Ag", "CoO", "Pd", "ZnO"],
+      "masked_mse": 0.0018511914814583921,
+      "masked_mae": 0.03179527217351296,
+      "weighted_masked_mse": 0.001716649965810531,
+      "psnr_db": 27.325486568604145,
+      "ssim": null
+    },
+    "simulation": {
+      "num_samples": 769,
+      "num_groups": 2,
+      "materials": ["CeO2", "SrTiO3"],
+      "masked_mse": 0.002019941641783199,
+      "masked_mae": 0.022728204514022302,
+      "weighted_masked_mse": 0.0038311595938281097,
+      "psnr_db": 26.946611775918136,
+      "ssim": null
+    }
+  },
+  "source_files": {
+    "experimental": "encoder/outputs/mixed_exp_sim_v1/metrics_experimental_test.csv",
+    "simulation": "encoder/outputs/mixed_exp_sim_v1/metrics_simulation_test.csv"
+  }
+}
