@@ -1,0 +1,2 @@
+masked_mse,masked_mae,weighted_masked_mse,psnr,ssim,num_samples
+0.2003587931394577,0.44749316573143005,0.19964198768138885,6.981915929460515,nan,1

@@ -1,0 +1,35 @@
+{
+  "schema_version": "4d-imagenet-packaged-masked-example-v1",
+  "checkpoint": "masked_reconstruction/mixed_domain_epoch48.pth",
+  "best_epoch": 48,
+  "device": "cuda",
+  "image_size": 192,
+  "mask": {
+    "type": "spot",
+    "spot_radius_fraction": 0.035,
+    "center_exclude_radius_fraction": 0.06,
+    "minimum_spots": 1,
+    "maximum_spots": 4,
+    "seed_base": 42
+  },
+  "records": [
+    {
+      "domain": "experimental",
+      "source_file": "sample_data/experimental/Pd_experimental_pattern.pkl",
+      "masked_pixels": 434,
+      "masked_mse": 0.001174098695628345,
+      "masked_mae": 0.02619767375290394,
+      "weighted_masked_mse": 0.001228964189067483,
+      "psnr_db": 29.302953944298174
+    },
+    {
+      "domain": "simulation",
+      "source_file": "sample_data/simulation/CeO2_simulation_pattern.pkl",
+      "masked_pixels": 149,
+      "masked_mse": 0.0003808105830103159,
+      "masked_mae": 0.01274802815169096,
+      "weighted_masked_mse": 0.0004000409389846027,
+      "psnr_db": 34.192909907520686
+    }
+  ]
+}

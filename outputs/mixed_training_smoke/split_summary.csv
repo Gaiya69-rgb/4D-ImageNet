@@ -1,0 +1,6 @@
+split,domain,num_samples,num_groups,materials
+train,experimental,1,1,Pd
+train,simulation,2,2,Ag_simulation_example.pkl;CeO2_simulation_example.pkl
+validation,experimental,1,1,Pd
+experimental_test,experimental,1,1,Pd
+simulation_test,simulation,1,1,SrTiO3_simulation_example.pkl

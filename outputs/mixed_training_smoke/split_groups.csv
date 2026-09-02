@@ -1,0 +1,7 @@
+split,domain,material,metadata_id,num_samples
+train,experimental,Pd,experimental::G:\4D-ImageNet\baselines\sample_data\mixed_train\exp\Pd\FOV190nm_256_256_CL160_3ms_2.1mrad_sp7_650kx_000_master\FOV190nm_256_256_CL160_3ms_2.1mrad_sp7_650kx_000_master.pkl,1
+train,simulation,Ag_simulation_example.pkl,simulation::G:\4D-ImageNet\baselines\sample_data\mixed_train\sim\Ag_simulation_example.pkl,1
+train,simulation,CeO2_simulation_example.pkl,simulation::G:\4D-ImageNet\baselines\sample_data\mixed_train\sim\CeO2_simulation_example.pkl,1
+validation,experimental,Pd,experimental::G:\4D-ImageNet\baselines\sample_data\mixed_train\exp\Pd\FOV134nm_256_256_CL160_3ms_2.1mrad_sp7_920kx_000_master\FOV134nm_256_256_CL160_3ms_2.1mrad_sp7_920kx_000_master.pkl,1
+experimental_test,experimental,Pd,experimental::G:\4D-ImageNet\baselines\sample_data\mixed_train\exp\Pd\FOV268nm_256_256_CL160_3ms_2.1mrad_sp7_460kx_000_master\FOV268nm_256_256_CL160_3ms_2.1mrad_sp7_460kx_000_master.pkl,1
+simulation_test,simulation,SrTiO3_simulation_example.pkl,simulation::G:\4D-ImageNet\baselines\sample_data\mixed_train\sim\SrTiO3_simulation_example.pkl,1
