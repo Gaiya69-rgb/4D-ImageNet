@@ -1,0 +1,261 @@
+{
+  "schema_version": "4d-imagenet-source-integrity-v1",
+  "statement": "Each listed packaged file was copied byte-for-byte from the corresponding project file.",
+  "files": [
+    {
+      "packaged_file": "disk_detection/configs.py",
+      "original_file": "disk_detection/configs.py",
+      "sha256": "97818a3868e2288641018e10f44c4201eb00ba37050553c223582591c7f1bd66"
+    },
+    {
+      "packaged_file": "disk_detection/model.py",
+      "original_file": "disk_detection/model.py",
+      "sha256": "62bd6bd1f2af60e98f3ecc0789993223646022d1883628337102a5ecec369830"
+    },
+    {
+      "packaged_file": "disk_detection/infer_4d_imagenet.py",
+      "original_file": "disk_detection/infer_4d_imagenet.py",
+      "sha256": "b7cb08ebaa06379fcba6e2f29b0612d7bec80a3b138a274468e95738961484bb"
+    },
+    {
+      "packaged_file": "disk_detection/generate_exp_labels.py",
+      "original_file": "disk_detection/generate_exp_labels.py",
+      "sha256": "1228834b1e940758137a1164290183553caa276bb19a355ac3e3aa35fba8b0ed"
+    },
+    {
+      "packaged_file": "masked_reconstruction/__init__.py",
+      "original_file": "encoder/baseline/__init__.py",
+      "sha256": "f01a374e9c81e3db89b3a42940c4d6a5447684986a1296e42bf13f196eed6295"
+    },
+    {
+      "packaged_file": "masked_reconstruction/dataset.py",
+      "original_file": "encoder/baseline/dataset.py",
+      "sha256": "eadd0926201b861c93b5281c8c42d75a1112fcb73ec7355d7812393ce2c98bfe"
+    },
+    {
+      "packaged_file": "masked_reconstruction/mask_visualization.py",
+      "original_file": "encoder/baseline/mask_visualization.py",
+      "sha256": "47378bb3d0c4975b105530a05dece8f46344697eaca6d7d44a7e93024e634de5"
+    },
+    {
+      "packaged_file": "masked_reconstruction/masked_reconstruction.py",
+      "original_file": "encoder/baseline/masked_reconstruction.py",
+      "sha256": "bad1bb8c88949dd989572cac763d913b31ea2d8c244408ec50949c152c1a7ff0"
+    },
+    {
+      "packaged_file": "masked_reconstruction/masks.py",
+      "original_file": "encoder/baseline/masks.py",
+      "sha256": "931fb445b4c76ded8eac4cf4d344ca750ec7b655efafccd682f7d446f4451976"
+    },
+    {
+      "packaged_file": "masked_reconstruction/metrics.py",
+      "original_file": "encoder/baseline/metrics.py",
+      "sha256": "89e9e695405268dbd20ba071c022b14056cb7f30000177ac0bacab251d671561"
+    },
+    {
+      "packaged_file": "masked_reconstruction/mixed_masked_reconstruction.py",
+      "original_file": "encoder/baseline/mixed_masked_reconstruction.py",
+      "sha256": "e974b07a66c1390644d9704507cbdb9a93247b7404c88746c44c09f78a4a81b0"
+    },
+    {
+      "packaged_file": "masked_reconstruction/models.py",
+      "original_file": "encoder/baseline/models.py",
+      "sha256": "2dd63a38ed6c466c493e5c8bdd9d0a00cea062b9ed445ca8f3b96fa2601ef3bf"
+    },
+    {
+      "packaged_file": "data_preparation/audit_4d_imagenet.py",
+      "original_file": "preprocess/audit_4d_imagenet.py",
+      "sha256": "ad7275299cdac6f613ba4bc4b32aaa012d0c8ce5d172f6a469dfdda96585f7d9"
+    },
+    {
+      "packaged_file": "data_preparation/extract_pkl.py",
+      "original_file": "preprocess/extract_pkl.py",
+      "sha256": "d18defe9529ed2c9eb0ca77d2af2b53d5de3c8615c18e13cb41053c7b6de445f"
+    },
+    {
+      "packaged_file": "data_preparation/merge_pkl.py",
+      "original_file": "preprocess/merge_pkl.py",
+      "sha256": "feb2a48c89b1856451c7b22bc102962f500b8c4e9e9b8c8f263dd7bd38ad9b88"
+    },
+    {
+      "packaged_file": "data_preparation/simulation_with_orientation.py",
+      "original_file": "preprocess/simulation_with_orientation.py",
+      "sha256": "3ba47ab579f033531352c5aa79d1bc333883d8bfe679395d23e99433e63cdc18"
+    },
+    {
+      "packaged_file": "data_preparation/transform_format.py",
+      "original_file": "preprocess/transform_format.py",
+      "sha256": "bf2169fe5ae8d4421da1bc9624292222a0b4aa621dc38395db1dd9c08e80777a"
+    },
+    {
+      "packaged_file": "data_preparation/visualize_merged_pkl.py",
+      "original_file": "preprocess/visualize_merged_pkl.py",
+      "sha256": "ba08f173cfcf76f34c9c7e416aeaf31840117b038dddeae34385be36e8aff726"
+    },
+    {
+      "packaged_file": "data_preparation/visualize_pkl.py",
+      "original_file": "preprocess/visualize_pkl.py",
+      "sha256": "9c45deca03298e326a823d15895bb248ddd3c644d90300d052df241c5e1072a9"
+    },
+    {
+      "packaged_file": "data_preparation/METADATA.md",
+      "original_file": "preprocess/METADATA.md",
+      "sha256": "d3db45774a341eaeb498819ba87760b1d6761ead034253ce5b875e2942819da4"
+    },
+    {
+      "packaged_file": "disk_detection/training/disk_detector_dataset.py",
+      "original_file": "zian_mao_4dformer/disk_detector_dataset.py",
+      "sha256": "3652dc7cbfa99a7323cc53f042fd2106e688fecf06ebbe8bf3065fd41a556930"
+    },
+    {
+      "packaged_file": "disk_detection/training/disk_detector_model.py",
+      "original_file": "zian_mao_4dformer/disk_detector_model.py",
+      "sha256": "e22c691ee44abe292ae90a59edb9cfb0193636e5b3fa13b2d5e138cc20c4174b"
+    },
+    {
+      "packaged_file": "disk_detection/training/disk_detector_train.py",
+      "original_file": "zian_mao_4dformer/disk_detector_train.py",
+      "sha256": "c57c8ec09e7e8d1f0415dcfe61fd655f4f8ba3446ee0ec812b7d7a4d0c5507ef"
+    },
+    {
+      "packaged_file": "disk_detection/training/disk_detector_inference.py",
+      "original_file": "zian_mao_4dformer/disk_detector_inference.py",
+      "sha256": "63e51852664370ad82bde2a6b69c57da69c69b351e473d894b7f2b2ee7944990"
+    },
+    {
+      "packaged_file": "disk_detection/training/diffraction_transform.py",
+      "original_file": "zian_mao_4dformer/diffraction_transform.py",
+      "sha256": "78c10d6a39b8b7621c5e6e0b57b717fcee97a49bd4ce54dc5cd0a03e28b6ab95"
+    },
+    {
+      "packaged_file": "disk_detection/training/ops/make.sh",
+      "original_file": "zian_mao_4dformer/ops/make.sh",
+      "sha256": "37a07393d06bc9114f634fbc216119ff709283a1718816aff8bd6eab6e26788b"
+    },
+    {
+      "packaged_file": "disk_detection/training/ops/MultiScaleDeformableAttention.cp312-win_amd64.pyd",
+      "original_file": "zian_mao_4dformer/ops/MultiScaleDeformableAttention.cp312-win_amd64.pyd",
+      "sha256": "3723d11d452b6c10d2513082053aea86af9739a5ba28ec7e160a86805a71184b"
+    },
+    {
+      "packaged_file": "disk_detection/training/ops/setup.py",
+      "original_file": "zian_mao_4dformer/ops/setup.py",
+      "sha256": "167e8f8ffa224514c1f195b5091b5ed6f7cfcabfe8b967719ddede3c402a103f"
+    },
+    {
+      "packaged_file": "disk_detection/training/ops/test.py",
+      "original_file": "zian_mao_4dformer/ops/test.py",
+      "sha256": "6066519322d749265c9983117ba8b012b35b6fbd46505d5b7842751eeb706942"
+    },
+    {
+      "packaged_file": "disk_detection/training/ops/functions/__init__.py",
+      "original_file": "zian_mao_4dformer/ops/functions/__init__.py",
+      "sha256": "e1a39c1cf23562b11d696d81f95cf8bef368c48149b681d1eadc7f6d188edd3a"
+    },
+    {
+      "packaged_file": "disk_detection/training/ops/functions/ms_deform_attn_func.py",
+      "original_file": "zian_mao_4dformer/ops/functions/ms_deform_attn_func.py",
+      "sha256": "dd9906037ce7dc45b9ef6f39d4934bb4dddefc3e09049024496827714b6738bc"
+    },
+    {
+      "packaged_file": "disk_detection/training/ops/modules/__init__.py",
+      "original_file": "zian_mao_4dformer/ops/modules/__init__.py",
+      "sha256": "3a40cdcd146fc93c3f4ba9702924582f6502e5fcd1ceccf687e9d0e6ff2d7b5f"
+    },
+    {
+      "packaged_file": "disk_detection/training/ops/modules/ms_deform_attn.py",
+      "original_file": "zian_mao_4dformer/ops/modules/ms_deform_attn.py",
+      "sha256": "1a093690d4fd1cb50aadba936f3450b54f7919dbed7dc68410a1ee622a40e408"
+    },
+    {
+      "packaged_file": "disk_detection/training/ops/src/ms_deform_attn.h",
+      "original_file": "zian_mao_4dformer/ops/src/ms_deform_attn.h",
+      "sha256": "2fdc244f99e3e3b9af8dae02e09139de3f546eef83748495c3f175f48278cf41"
+    },
+    {
+      "packaged_file": "disk_detection/training/ops/src/vision.cpp",
+      "original_file": "zian_mao_4dformer/ops/src/vision.cpp",
+      "sha256": "8dec032236873cee3ae86921dabbbb02c62ffd95ddbb83aef0b1b856771e8a61"
+    },
+    {
+      "packaged_file": "disk_detection/training/ops/src/cpu/ms_deform_attn_cpu.cpp",
+      "original_file": "zian_mao_4dformer/ops/src/cpu/ms_deform_attn_cpu.cpp",
+      "sha256": "d7f7c3d2df2484f3905005e13c8dc12dd943fd4451a59a059bda367eefa4dccd"
+    },
+    {
+      "packaged_file": "disk_detection/training/ops/src/cpu/ms_deform_attn_cpu.h",
+      "original_file": "zian_mao_4dformer/ops/src/cpu/ms_deform_attn_cpu.h",
+      "sha256": "b9114ab52ea7610184b3eb9672731c3d1a7ce92e69bfdec6cf661ae988416aef"
+    },
+    {
+      "packaged_file": "disk_detection/training/ops/src/cuda/ms_deform_attn_cuda.cu",
+      "original_file": "zian_mao_4dformer/ops/src/cuda/ms_deform_attn_cuda.cu",
+      "sha256": "c8918c5222fb7e74ac040f7f6cca549d617e3ea15ad498396852b3bb79bb6b9b"
+    },
+    {
+      "packaged_file": "disk_detection/training/ops/src/cuda/ms_deform_attn_cuda.h",
+      "original_file": "zian_mao_4dformer/ops/src/cuda/ms_deform_attn_cuda.h",
+      "sha256": "c9cd9345e0881dfeebbfa5e98b6e6990a3d415a430bcbaaba3706ce5a2379401"
+    },
+    {
+      "packaged_file": "disk_detection/training/ops/src/cuda/ms_deform_im2col_cuda.cuh",
+      "original_file": "zian_mao_4dformer/ops/src/cuda/ms_deform_im2col_cuda.cuh",
+      "sha256": "136729520587cbf0593209d692af61a1e8af5909bcf34b8bacb8844878496bad"
+    },
+    {
+      "packaged_file": "disk_detection/training/vendor/torch-linear-assignment/LICENSE",
+      "original_file": "zian_mao_4dformer/torch-linear-assignment-main/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "packaged_file": "disk_detection/training/vendor/torch-linear-assignment/MANIFEST.in",
+      "original_file": "zian_mao_4dformer/torch-linear-assignment-main/MANIFEST.in",
+      "sha256": "417d51057f167eaf0fc462660e9a4b7ace2a0e514a9a7e1ce4762a35e133aa88"
+    },
+    {
+      "packaged_file": "disk_detection/training/vendor/torch-linear-assignment/pyproject.toml",
+      "original_file": "zian_mao_4dformer/torch-linear-assignment-main/pyproject.toml",
+      "sha256": "c0acc136a51722300c1aee2832c0fec6c17490d2b6ab23af70ea4010589a7f81"
+    },
+    {
+      "packaged_file": "disk_detection/training/vendor/torch-linear-assignment/README.md",
+      "original_file": "zian_mao_4dformer/torch-linear-assignment-main/README.md",
+      "sha256": "e4406491841cb4ec8c0ef69449f12f10639508f85db37c33fa72364137bfcb71"
+    },
+    {
+      "packaged_file": "disk_detection/training/vendor/torch-linear-assignment/requirements.txt",
+      "original_file": "zian_mao_4dformer/torch-linear-assignment-main/requirements.txt",
+      "sha256": "c0bde830716a8989efced88fe828ec82a55243a48149dfed0c3b82c0b5b73957"
+    },
+    {
+      "packaged_file": "disk_detection/training/vendor/torch-linear-assignment/setup.py",
+      "original_file": "zian_mao_4dformer/torch-linear-assignment-main/setup.py",
+      "sha256": "a77c553acd0443e29b729cbfbb10f9133d342d43df8094765da48248dc006f36"
+    },
+    {
+      "packaged_file": "disk_detection/training/vendor/torch-linear-assignment/src/torch_linear_assignment_cuda_kernel.cu",
+      "original_file": "zian_mao_4dformer/torch-linear-assignment-main/src/torch_linear_assignment_cuda_kernel.cu",
+      "sha256": "3f216b525ac93239fad2b8bb42f0a7f0bc87d4ea299671a1bc80de87dedbe85a"
+    },
+    {
+      "packaged_file": "disk_detection/training/vendor/torch-linear-assignment/src/torch_linear_assignment_cuda.cpp",
+      "original_file": "zian_mao_4dformer/torch-linear-assignment-main/src/torch_linear_assignment_cuda.cpp",
+      "sha256": "265e56c899a0086a94977478e2ce093e7f0d4fa7ac8521e5b3314234919e9003"
+    },
+    {
+      "packaged_file": "disk_detection/training/vendor/torch-linear-assignment/src/torch_linear_assignment.cpp",
+      "original_file": "zian_mao_4dformer/torch-linear-assignment-main/src/torch_linear_assignment.cpp",
+      "sha256": "8eb05a7d79168830afcdd564e97ef6a57756fdc6ded7827015597a8757dfb87c"
+    },
+    {
+      "packaged_file": "disk_detection/training/vendor/torch-linear-assignment/torch_linear_assignment/__init__.py",
+      "original_file": "zian_mao_4dformer/torch-linear-assignment-main/torch_linear_assignment/__init__.py",
+      "sha256": "c22e7f17d28cbe76fe95321e8a8c80833390ab7391cf9a9e1057cd78cb9f23de"
+    },
+    {
+      "packaged_file": "disk_detection/training/vendor/torch-linear-assignment/torch_linear_assignment/assignment.py",
+      "original_file": "zian_mao_4dformer/torch-linear-assignment-main/torch_linear_assignment/assignment.py",
+      "sha256": "e6e2a6f07897b0b7ded91793ece4ea6c0126fc579732815b14b1b2c328c3fe9a"
+    }
+  ]
+}

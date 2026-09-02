@@ -1,0 +1,7 @@
+-r requirements.txt
+py4DSTEM==0.14.18
+abtem==1.0.6
+ase==3.25.0
+dask[array]==2025.2.0
+zarr==2.15.0
+numcodecs==0.15.1

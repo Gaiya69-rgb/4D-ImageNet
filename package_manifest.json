@@ -1,0 +1,101 @@
+{
+  "schema_version": "4d-imagenet-baselines-package-v1",
+  "package_root": "baselines",
+  "execution_root": ".",
+  "recommended_python": "3.12",
+  "functional_coverage": [
+    {
+      "function": "ARINA H5 and Merlin MIB format conversion",
+      "entry_point": "data_preparation/transform_format.py",
+      "vscode_launch": "Transform Format - GUI",
+      "included_assets": [],
+      "verification": "CLI/import path checked",
+      "external_requirement": "user-supplied raw detector file"
+    },
+    {
+      "function": "experimental pattern curation and acquisition-level PKL merging",
+      "entry_point": "data_preparation/extract_pkl.py; data_preparation/merge_pkl.py",
+      "vscode_launch": null,
+      "included_assets": [
+        "sample_data/experimental",
+        "sample_data/mixed_train/exp"
+      ],
+      "verification": "help/import paths and packaged PKL schemas checked",
+      "external_requirement": "converted acquisition H5 for a full run"
+    },
+    {
+      "function": "abTEM multislice simulation",
+      "entry_point": "data_preparation/run_simulation_example.py",
+      "vscode_launch": "Multislice Simulation - One Ag Pattern",
+      "included_assets": [
+        "data_preparation/cif",
+        "sample_data/simulation",
+        "sample_data/mixed_train/sim"
+      ],
+      "verification": "abTEM import and package-relative wrapper checked",
+      "external_requirement": "compatible abTEM GPU environment for generation"
+    },
+    {
+      "function": "r4 Bragg-disk inference",
+      "entry_point": "disk_detection/infer_4d_imagenet.py",
+      "vscode_launch": "Disk Detection - Packaged Experimental Example",
+      "included_assets": [
+        "disk_detection/r4_weights.pth",
+        "sample_data/experimental/Pd_experimental_pattern.pkl"
+      ],
+      "verification": "strict checkpoint load and one-pattern real experimental inference passed",
+      "external_requirement": null
+    },
+    {
+      "function": "acquisition-level Bragg-disk label generation",
+      "entry_point": "disk_detection/generate_exp_labels.py",
+      "vscode_launch": null,
+      "included_assets": [
+        "disk_detection/r4_weights.pth",
+        "disk_detection/full_label_manifest.json"
+      ],
+      "verification": "shared model/preprocessing path checked through packaged inference",
+      "external_requirement": "released acquisition PKLs for a complete label run"
+    },
+    {
+      "function": "original supervised r4 training",
+      "entry_point": "disk_detection/training/disk_detector_train.py",
+      "vscode_launch": null,
+      "included_assets": [
+        "disk_detection/training/ops",
+        "disk_detection/training/vendor/torch-linear-assignment"
+      ],
+      "verification": "source hashes and Python syntax checked; native source/artifact presence checked",
+      "external_requirement": "independently supervised legacy item_list PKLs and compatible CUDA build environment"
+    },
+    {
+      "function": "mixed-domain masked-reconstruction inference",
+      "entry_point": "masked_reconstruction/run_inference_example.py",
+      "vscode_launch": "Masked Reconstruction - Packaged Experimental and Simulation Examples",
+      "included_assets": [
+        "masked_reconstruction/mixed_domain_epoch48.pth",
+        "sample_data/experimental/Pd_experimental_pattern.pkl",
+        "sample_data/simulation/CeO2_simulation_pattern.pkl"
+      ],
+      "verification": "strict checkpoint load and experimental/simulation inference passed",
+      "external_requirement": null
+    },
+    {
+      "function": "mixed-domain masked-reconstruction training and evaluation",
+      "entry_point": "masked_reconstruction/mixed_masked_reconstruction.py",
+      "vscode_launch": "Mixed-domain Training - Tiny Smoke Test",
+      "included_assets": [
+        "sample_data/mixed_train",
+        "masked_reconstruction/split_manifest.json",
+        "masked_reconstruction/test_metrics.json"
+      ],
+      "verification": "one-epoch grouped train/validation/experimental-test/simulation-test run passed",
+      "external_requirement": "full released experimental and simulation records to reproduce reported metrics"
+    }
+  ],
+  "integrity": {
+    "copied_source_manifest": "source_integrity.json",
+    "sample_data_manifest": "sample_data/manifest.json",
+    "verification_entry_point": "verify_package.py"
+  }
+}

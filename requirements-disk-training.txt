@@ -1,0 +1,9 @@
+-r requirements.txt
+opencv-python==4.10.0.84
+tensorboard==2.19.0
+transformers==4.47.1
+
+# Install the two vendored extensions separately from the baselines root:
+# python -m pip install ./disk_detection/training/vendor/torch-linear-assignment
+# python -m pip install ./disk_detection/training/ops
+
